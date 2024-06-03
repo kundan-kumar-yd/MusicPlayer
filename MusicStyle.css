@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  background-image: url(Meida/musicbackground.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.musicplayer {
+  width: 400px;
+  border-radius: 10px;
+  padding: 25px 35px;
+  text-align: center;
+  background: radial-gradient(
+    circle at 72.4% 50.9%,
+    rgb(14, 72, 222),
+    rgb(3, 22, 65) 75.3%
+  );
+}
+nav {
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+nav .title {
+  padding: 10px;
+}
+nav .circle {
+  width: 40px;
+  height: 40px;
+  color: blue;
+  background: white;
+  border-radius: 50%;
+  line-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 10px rgba(255, 26, 26, 0.7);
+  cursor: pointer;
+}
+.song_image {
+  border: 8px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 5px 10px rgba(255, 26, 26, 0.9);
+}
+h1 {
+  font-size: 30px;
+  color: white;
+  font-weight: normal;
+  margin-top: 20px;
+}
+p {
+  font-size: 20px;
+  color: white;
+  padding-top: 10px;
+}
+#progress {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 40px 0;
+}
+#progress::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 25px;
+  width: 25px;
+  border: 8px solid #fff;
+  background: blue;
+  border-radius: 50%;
+  box-shadow: 0 5px 5px rgba(255, 26, 26, 0.4);
+}
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.controls div {
+  width: 60px;
+  height: 60px;
+  margin: 25px;
+  color: blue;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.controls div:nth-child(2) {
+  transform: scale(1.5);
+}
